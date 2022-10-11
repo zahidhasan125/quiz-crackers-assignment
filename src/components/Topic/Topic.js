@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashAlt, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Button, Card } from 'flowbite-react';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -16,7 +18,7 @@ const Topic = ({ topic }) => {
                         Total Quiz: {total}
                     </p>
                 </div>
-                <Button><Link to={`/topic/${id}`}>View Quiz</Link></Button>
+                <Button><Link to={`/topic/${id}`} className='font-bold text-lg'><span className='w-full'>Go to Quiz<FontAwesomeIcon icon={faArrowRight} className='ml-2'></FontAwesomeIcon></span></Link></Button>
             </Card>
         </div>
     );
