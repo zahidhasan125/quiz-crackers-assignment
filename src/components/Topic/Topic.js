@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const Topic = ({ topic }) => {
     const { id, logo, name, total } = topic;
     return (
-        <div className="max-w-sm p-4 bg-slate-300 rounded-lg">
+        <div className="max-w-sm bg-slate-300 rounded-lg">
             <Card >
-                <img src={logo} alt="" />
+                <img className='bg-gray-700 rounded-lg' src={logo} alt="" />
                 <div className='flex justify-between items-center'>
                     <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                         {name}
