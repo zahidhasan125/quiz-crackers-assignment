@@ -2,7 +2,7 @@ import logo from '../../quiz-logo.png'
 import { Navbar } from 'flowbite-react';
 import React from 'react';
 import './Nav.css'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Nav = () => {
     return (
@@ -23,24 +23,26 @@ const Nav = () => {
                 </Link>
                 <Navbar.Toggle />
                 <Navbar.Collapse>
-                    <Link
+                    <NavLink
                         to="/home"
                         active='true'
+                        className={({ isActive }) => isActive ? "bg-blue-400 px-2 py-1 rounded-md" : undefined}
+
                     >
                         Home
-                    </Link>
-                    <Link to="/about">
+                    </NavLink>
+                    <NavLink to="/about" className={({ isActive }) => isActive ? "bg-blue-400 px-2 py-1 rounded-md" : undefined}>
                         About
-                    </Link>
-                    <Link to="/statistics">
+                    </NavLink>
+                    <NavLink to="/statistics" className={({ isActive }) => isActive ? "bg-blue-400 px-2 py-1 rounded-md" : undefined}>
                         Statistics
-                    </Link>
-                    <Link to="/blogs">
+                    </NavLink>
+                    <NavLink to="/blogs" className={({ isActive }) => isActive ? "bg-blue-400 px-2 py-1 rounded-md" : undefined}>
                         Blogs
-                    </Link>
-                    <Link to="/contact">
+                    </NavLink>
+                    <NavLink to="/contact" className={({ isActive }) => isActive ? "bg-blue-400 px-2 py-1 rounded-md" : undefined}>
                         Contact
-                    </Link>
+                    </NavLink>
                 </Navbar.Collapse>
             </Navbar>
         </div>
