@@ -11,13 +11,13 @@ const Nav = () => {
                 fluid={true}
                 rounded={true}
             >
-                <Link to="/">
+                <Link to="/" className='flex underline'>
                     <img
                         src={logo}
                         className="mr-3 h-12"
                         alt="PH Quiz Logo"
                     />
-                    <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+                    <span className="self-center whitespace-nowrap text-3xl font-extrabold dark:text-white">
                         PH QUIZ
                     </span>
                 </Link>
