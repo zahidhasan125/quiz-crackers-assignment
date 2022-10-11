@@ -1,4 +1,6 @@
 .navbar{
     margin: 20px;
+    margin-top: 0;
     box-shadow: 6px 6px 6px lightgray;
+    border-radius: 20px;
 }

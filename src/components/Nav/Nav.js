@@ -10,7 +10,7 @@ const Nav = () => {
                 fluid={true}
                 rounded={true}
             >
-                <Navbar.Brand href="https://flowbite.com/">
+                <Navbar.Brand href="/">
                     <img
                         src={logo}
                         className="mr-3 h-12"
@@ -23,21 +23,21 @@ const Nav = () => {
                 <Navbar.Toggle />
                 <Navbar.Collapse>
                     <Navbar.Link
-                        href="/navbars"
+                        href="/home"
                         active={true}
                     >
                         Home
                     </Navbar.Link>
-                    <Navbar.Link href="/navbars">
+                    <Navbar.Link href="/about">
                         About
                     </Navbar.Link>
-                    <Navbar.Link href="/navbars">
-                        Services
+                    <Navbar.Link href="/statistics">
+                        Statistics
                     </Navbar.Link>
-                    <Navbar.Link href="/navbars">
-                        Pricing
+                    <Navbar.Link href="/blogs">
+                        Blogs
                     </Navbar.Link>
-                    <Navbar.Link href="/navbars">
+                    <Navbar.Link href="/contact">
                         Contact
                     </Navbar.Link>
                 </Navbar.Collapse>
