@@ -7,13 +7,17 @@ Also Used `react-router-dom` `tailwindcss` `flowbite-react` `recharts`
 
 ### Description
 
-* Navbar added
-* Main Layout added
+* Build with FlowbiteCss Componets
+* Navbar
+* Main Layout
 * Router Setup on App.js
+* Components Added
 * Data Loaded with loader & and send to the children with Context
-* 
-* 
-* 
+* ErrorPage setup
+* Chart component added based on loader data on Statistics 
+* Questions & Answers Added on Blogs page
+* Toast added for Quiz Result
+* Responsive for Mobile, Tablet & Desktop Devices
 
 ### A list of Topics in this webApp
 
