@@ -7,6 +7,7 @@ const Option = ({ option, question, count }) => {
     const toastId = useRef(null);
     const handleIsTrue = (option) => {
         if (correctAnswer === option) {
+            console.log('true')
             count(true);
             if (!toast.isActive(toastId.current)) {
                 toastId.current = toast.success('🦄 Correct!', {
@@ -24,6 +25,7 @@ const Option = ({ option, question, count }) => {
 
         }
         else {
+            console.log('false')
             count(false);
             if (!toast.isActive(toastId.current)) {
                 toastId.current = toast.warn('🦄 Incorrect!', {
@@ -45,8 +47,8 @@ const Option = ({ option, question, count }) => {
         <div>
             <div className="flex items-center mb-4 border border-blue-500 cursor-pointer py-2 px-4 rounded-lg hover:bg-slate-400">
 
-                <label onClick={() => handleIsTrue(option)} htmlFor={option} className="block text-xl font-medium text-gray-900 dark:text-gray-300">
-                    <input id={option} type="radio" name="option" value="USA" className="mr-2 w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600" />
+                <label htmlFor={option} className="w-full block text-xl font-medium text-gray-900 dark:text-gray-300">
+                    <input onClick={() => handleIsTrue(option)} id={option} type="radio" name="option" value="USA" className="mr-2 w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300 dark:focus:ring-blue-600 dark:focus:bg-blue-600 dark:bg-gray-700 dark:border-gray-600" />
                     {option}
                 </label>
             </div>

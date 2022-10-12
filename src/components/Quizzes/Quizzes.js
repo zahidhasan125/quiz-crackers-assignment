@@ -25,11 +25,11 @@ const Quizzes = () => {
             <div className='fixed sm:bottom-40 sm:right-0 right-5 bottom-5 flex justify-center bg-slate-400 p-2 rounded-lg'>
                 <div className='border-4 border-green-600 text-center text-green-600 rounded-lg px-4 font-semibold'>
                     <p>Correct</p>
-                    <p>{correct/2}</p>
+                    <p>{correct}</p>
                 </div>
                 <div className='border-4 border-red-600 text-center text-red-600 rounded-lg px-4 font-semibold'>
                     <p>Wrong</p>
-                    <p>{wrong/2}</p>
+                    <p>{wrong}</p>
                 </div>
             </div>
         </div>
