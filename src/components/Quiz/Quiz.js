@@ -27,7 +27,7 @@ const Quiz = ({ question, count }) => {
             <h4 className='mr-2 text-gray-50 py-2 px-4 bg-blue-600 rounded-md'>Question:-</h4><h4 dangerouslySetInnerHTML={{ __html: question.question }}></h4>
             </div>
             <p className='text-center underline text-violet-900'>Choose Correct Answer From Bellow</p>
-            <span onClick={() => handleViewAnswer(correctAnswer)} className='absolute right-5 bottom-5 sm:right-10 sm:top-10 cursor-pointer' title='View Answer'><FontAwesomeIcon icon={faMagnifyingGlass}></FontAwesomeIcon></span>
+            <span onClick={() => handleViewAnswer(correctAnswer)} className='absolute right-5 bottom-5 md:right-5 md:bottom-5 sm:right-10 sm:bottom-10 cursor-pointer' title='View Answer'><FontAwesomeIcon icon={faMagnifyingGlass}></FontAwesomeIcon></span>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 my-4 mx-auto w-50'>
                 {
                     options.map(option => <Option key={option} option={option} question={question} count={count}></Option>)
