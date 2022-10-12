@@ -1,6 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import About from './components/About/About';
 import Blogs from './components/Blogs/Blogs';
+import Contact from './components/Contact/Contact';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Quizzes from './components/Quizzes/Quizzes';
 import Statistics from './components/Statistics/Statistics';
@@ -34,11 +36,11 @@ function App() {
           },
           {
             path: '/about',
-            element: <h5>This is About Page</h5>
+            element: <About></About>
           },
           {
             path: '/contact',
-            element: <h5>This is Contact Page</h5>
+            element: <Contact></Contact>
           },
           {
             path: '/topic/:topicId',

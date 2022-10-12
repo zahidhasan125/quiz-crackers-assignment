@@ -5,7 +5,7 @@ import Option from '../Option/Option';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Quiz = ({ question }) => {
+const Quiz = ({ question, count }) => {
     const { options, correctAnswer } = question;
 
     const handleViewAnswer = answer => {
@@ -30,7 +30,7 @@ const Quiz = ({ question }) => {
             <span onClick={() => handleViewAnswer(correctAnswer)} className='absolute right-5 bottom-5 sm:right-10 sm:top-10 cursor-pointer' title='View Answer'><FontAwesomeIcon icon={faMagnifyingGlass}></FontAwesomeIcon></span>
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 my-4 mx-auto w-50'>
                 {
-                    options.map(option => <Option key={option} option={option} question={question}></Option>)
+                    options.map(option => <Option key={option} option={option} question={question} count={count}></Option>)
                 }
             </div>
             <ToastContainer

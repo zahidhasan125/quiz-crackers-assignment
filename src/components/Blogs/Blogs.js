@@ -21,7 +21,7 @@ const Blogs = () => {
             <p className='text-xl font-semibold'>Question 2: How Does Context API works?</p>
           </Accordion.Title>
           <Accordion.Content>
-            <p className="mb-2 font-semibold text-gray-800 dark:text-gray-400">
+            <div className="mb-2 font-semibold text-gray-800 dark:text-gray-400">
               Context API used to share data with multiple components, without having to pass data through props manually by props Drilling. At first we need to do is create a context using the createContext function from React to start with the Context API.
               <p><br /><code>const ExampleContext = createContext([]);</code></p>
               <br />
@@ -31,7 +31,7 @@ const Blogs = () => {
 
               <br />The Provider component receives a prop called value, which can be accessed from all the components that are wrapped inside Provider, and it will be responsible to grant access to the context data.
               <p>The useContext hook receives a single argument, which is the context that you want to have access to. The useContext is way better and cleaner than the Consumer component—we can easily understand what’s going on and increase the maintainability of our application.</p>
-            </p>
+            </div>
           </Accordion.Content>
         </Accordion.Panel>
         <Accordion.Panel>
